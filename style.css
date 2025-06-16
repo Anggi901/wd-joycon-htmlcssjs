@@ -1,0 +1,152 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  #starCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .joycon {
+    width: 120px;
+    height: 320px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .joycon.left {
+    background: #f78fb3;
+  }
+  
+  .joycon.right {
+    background: #f8a5c2;
+  }
+  
+  .screen {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background: #222;
+    border: 4px solid #f78fb3;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 10px;
+  }
+  
+  #oceanCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  #textScreen {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #textScreen.animate {
+    animation: pop 0.5s;
+  }
+  
+  #textScreen img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  #textLabel {
+    font-size: 24px;
+    color:bisque;
+  }
+  
+  .direction-pad {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .direction-pad button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 2px solid #f78fb3;
+    color: #f78fb3;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+  
+  .direction-pad .up { top: 0; left: 35px; }
+  .direction-pad .down { bottom: 0; left: 35px; }
+  .direction-pad .left { top: 35px; left: 0; }
+  .direction-pad .right { top: 35px; right: 0; }
+  
+  .action-pad {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .action-pad button {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border: 2px solid #f8a5c2;
+    color: #f78fb3;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+  
+  button:active {
+    background: #f78fb3;
+    color: #fff;
+    transform: scale(0.9);
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color:#fffb00;
+    font-size: 12px;
+    z-index: 1;
+    margin-right: auto;
+  }
+  
+  footer a {
+    color: #fffb00;
+    text-decoration: none;
+    margin-right: auto;
+  }
+  
+  @keyframes pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+  }
