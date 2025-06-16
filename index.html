@@ -43,5 +43,43 @@
     <!--  -->
     <!-- kamu boleh menambahkan sprite di samping textscreen yang sudah ada @POINPLUS -->
     <!-- di ujung kanan bawah, tambahkan informasi NIM, nama, dan link Github @UTAMA -->
+
+     <!-- Canvas background bintang -->
+  <canvas id="starCanvas"></canvas>
+
+  <!-- Nintendo Switch -->
+  <div class="switch">
+    <div class="joycon left">
+      <div class="direction-pad">
+        <button class="up" data-action="Atas">^</button>
+        <button class="down" data-action="Bawah">v</button>
+        <button class="left" data-action="Kiri">&lt;</button>
+        <button class="right" data-action="Kanan">&gt;</button>
+      </div>
+    </div>
+
+    <div class="screen">
+      <canvas id="oceanCanvas" width="350" height="300"></canvas>
+      <div id="textScreen">
+        <img id="sprite" src="" alt="" />
+        <span id="textLabel">Tekan Tombol</span>
+      </div>
+    </div>
+
+    <div class="joycon right">
+      <div class="action-pad">
+        <button data-action="A">A</button>
+        <button data-action="B">B</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Info -->
+  <footer>
+    NPM: 23430205 | Nama: Anggi Dwinda Putri | <a href="https://github.com/Anggi901/wd-joycon-htmlcssjs" target="_blank">GitHub</a>
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
