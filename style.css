@@ -43,7 +43,7 @@ html, body {
     position: relative;
     width: 350px;
     height: 300px;
-    background: #222;
+    background: bisque;
     border: 4px solid #f78fb3;
     border-radius: 20px;
     overflow: hidden;
@@ -77,7 +77,7 @@ html, body {
   
   #textLabel {
     font-size: 24px;
-    color:bisque;
+    color:rgb(255, 0, 179);
   }
   
   .direction-pad {
@@ -133,16 +133,16 @@ html, body {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    color:#fffb00;
+    color:#f78fb3;
     font-size: 12px;
     z-index: 1;
     margin-right: auto;
   }
   
   footer a {
-    color: #fffb00;
+    color: #0051ff;
     text-decoration: none;
-    margin-right: auto;
+    
   }
   
   @keyframes pop {
