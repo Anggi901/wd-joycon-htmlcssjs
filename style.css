@@ -131,7 +131,7 @@ html, body {
   footer {
     position: absolute;
     bottom: 10px;
-    left: 50%;
+    left: 77%;
     transform: translateX(-50%);
     color:#f78fb3;
     font-size: 12px;
@@ -140,7 +140,7 @@ html, body {
   }
   
   footer a {
-    color: #0051ff;
+    color: #f78fb3;
     text-decoration: none;
     
   }
